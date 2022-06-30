@@ -249,6 +249,8 @@ buttons.forEach(button => {
    let industryList = document.querySelector(`.industry-list`);
    let closeNav = document.querySelector(`.close-nav`);
    let footer = document.querySelector(`footer`);
+   let logo = document.querySelector(`.logo`);
+   let navIcon = document.querySelector(`.nav-icon`);
 
 
 
@@ -265,8 +267,6 @@ buttons.forEach(button => {
       allBody.style.background = `rgb(54, 53, 53)`;
       allBody.style.opacity = `80%`;
       allBody.style.transition = `1s`;
-      allBody.style.display = `sticky`;
-      // slide.style.transition = `all 2s`;
       platformBtn.style.display = `flex`;
       platformBtn.style.borderTop = `1px solid rgb(214, 214, 214)`;
       solutionBtn.style.display = `flex`;
@@ -599,4 +599,23 @@ function toggleCompany() {
 companyBtn.addEventListener(`click`, ()=>{
    companyItems2.toggleAttribute(toggleCompany());
 
+});
+
+
+
+
+
+let readMoreBtn = document.querySelector(`.read-btn`);
+let readMore = document.querySelector(`.readmore`);
+let readlessBtn = document.querySelector(`.readless-btn`)
+
+readMoreBtn.addEventListener(`click`, ()=>{
+   readMore.style.display = `block`;
+   readMoreBtn.style.display = `none`;
+   readlessBtn.style.display = `block`;
+});
+readlessBtn.addEventListener(`click`,()=>{
+   readMore.style.display = `none`;
+   readMoreBtn.style.display = `block`;
+   readlessBtn.style.display = `none`;
 });

@@ -113,7 +113,7 @@ button:hover{
         justify-content: space-between;
         border-bottom: .1px solid rgb(206, 204, 204);
         background: white;
-        z-index: 1000;
+        z-index: 2000;
     }
     .nav-item{
         display: none;
@@ -123,9 +123,10 @@ button:hover{
         display: none;
         flex-direction: column;
         position: absolute;
+        justify-content: center;
         z-index: 1000;
         width: 100vw;
-        top: 6vh;
+        top: 7vh;
     }
     .slide-nav{
         display: none;
@@ -500,6 +501,7 @@ button:hover{
         transition: .5s;
         cursor: pointer;
         color: black;
+        text-align: center;
     }
     menu .menu-item{
         display: flex;
@@ -589,6 +591,16 @@ button:hover{
         align-items: center;
         justify-content: center;
         padding: 10% 5%;
+    }
+    .read-btn{
+        color: rgb(70, 70, 240);
+    }
+    .readless-btn{
+        display: none;
+        color: rgb(70, 70, 240);
+    }
+    .readmore{
+        display: none;
     }
     .section3 li{
         display: flex;
@@ -901,7 +913,7 @@ button:hover{
     .terms p{
         font-size: 15px;
         margin-bottom: 10%;
-        color: rgb(214, 210, 210);
+        color:rgb(131, 131, 131);
     }
 }
 
@@ -1405,6 +1417,16 @@ button:hover{
         justify-content: center;
         padding: 10% 5%;
     }
+    .read-btn{
+        color: rgb(70, 70, 240);
+    }
+    .readless-btn{
+        display: none;
+        color: rgb(70, 70, 240);
+    }
+    .readmore{
+        display: none;
+    }
     .section3 li{
         display: flex;
         flex-direction: column;
@@ -1724,7 +1746,7 @@ button:hover{
     .terms p{
         font-size: 15px;
         margin-bottom: 10%;
-        color: rgb(214, 210, 210);
+        color: rgb(131, 131, 131);;
     }
 }
 
@@ -2237,6 +2259,15 @@ menu .menu-item #item button{
     padding: 10% 5%;
     overflow: hidden;
 }
+.read-btn{
+    display: none;
+}
+.readless-btn{
+    display: none;
+}
+.readmore{
+    display: block;
+}
 .section3 .take-rapid{
     width: 80vw;
 }
@@ -2611,7 +2642,7 @@ footer menu ul li{
     left: -70vw;
     margin: 0;
     font-size: 15px;
-    color: rgb(214, 210, 210);
+    color: rgb(131, 131, 131);
 }
 .terms{
     width: 100vw;
@@ -2632,20 +2663,38 @@ footer menu ul li{
     }
 
     .platform-items{
-        width: 77vw;
+        padding: 2%;
+        width: 75%;
         left: -40vw;
     }
+    .platform-items ul{
+        width: 20vw;
+    }
     .solution-items{
+        padding: 2%;
         width: 55vw;
-        left: -20vw;
+        left: -15vw;
+    }
+    .solution-items ul{
+        width: 20vw;
     }
     .resources-items{
+        padding: 2%;
         width: 35vw;
         left: 0vw;
     }
+    .resources-items ul li{
+        width: 15vw;
+        padding: 7% 5%;
+    }
     .company-items{
+        padding: 2%;
         width: 20vw;
         left: 15vw;
+    }
+    .company-items ul li{
+        width: 15vw;
+        padding: 7% 5%;
     }
 
     .featured{
