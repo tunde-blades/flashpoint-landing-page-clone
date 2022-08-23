@@ -6,6 +6,7 @@ font-family: 'PT Sans Narrow', sans-serif; */
 }
 .overview{
     display: none;
+    position: inherit;
 }
 .slide-nav{
     font-family: 'Mulish', sans-serif;
