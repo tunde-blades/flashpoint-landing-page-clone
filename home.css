@@ -126,7 +126,7 @@ button:hover{
         justify-content: center;
         z-index: 1000;
         width: 100vw;
-        top: 7vh;
+        top: 52px;
     }
     .slide-nav{
         display: none;
@@ -968,7 +968,7 @@ button:hover{
         position: absolute;
         z-index: 1000;
         width: 100vw;
-        top: 6vh;
+        top: 52px;
     }
     .slide-nav{
         display: none;
